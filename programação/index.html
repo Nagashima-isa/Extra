@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <title>Busca de Usuários</title>
+</head>
+<body>
+
+    <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+      <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+
+    <h2>Buscar Seus Programas Favoritos</h2>
+
+    <input type="text" id="busca" placeholder="Digite o nome da série que procura">
+    <button onclick="filtrar()">Buscar</button>
+    <a id="meuLink" href="#">Acessar Perfil</a>
+
+    <div id="resultado"></div>
+
+    <script src="https://jsdelivr.net">
+        let Programa = [];
+
+        async function carregarPrograma() {
+            baseURL = await fetch("https://api.tvmaze.com/search/shows?q=");
+            Programa = await base.json();
+            <a id="meuLink" href="#">Acessar Perfil</a>
+
+
+  const baseURL = "https://exemplo.com";
+  const linkCompleto = `${baseURL}${busca}`;
+
+  // Atribuindo a URL concatenada ao elemento HTML
+  document.getElementById("meuLink").href = linkCompleto;
+
+        }
+
+        function filtrar() {
+            const texto = document.querySelector("#busca").value.toLowerCase();
+
+            const filtrados = Programa.filter(serie =>
+                serie.name.toLowerCase().includes(texto)
+            );
+
+            mostrarNaTela(filtrados);
+        }
+
+        function mostrarNaTela(lista) {
+            const div = document.querySelector("#resultado");
+            div.innerHTML = "";
+
+            if (lista.length === 0) {
+                div.textContent = "Nenhum resultado encontrado";
+                return;
+            }
+
+            lista.forEach(serie => {
+                const p = document.createElement("p");
+                p.textContent = `${serie.name} - ${serie.Score} - ${serie.image}`;
+                div.appendChild(p);
+            });
+        }
+
+        <div class="card">
+  <image src="imagem.jpg" alt="Descrição da imagem">
+  <div class="card-conteudo">
+    <h2>Título do Card</h2>
+    <p>Este é um exemplo de texto descritivo para o seu cartão.</p>
+    <a href="#" class="btn">Saiba mais</a>
+  </div>
+</div>
+
+
+        carregarUsuarios();
+    </script>
+
+</body>
+</html>
