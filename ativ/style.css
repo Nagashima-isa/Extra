@@ -1,0 +1,32 @@
+body{
+    justify-content: center;
+    background-color: black;
+    color: white;
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 16px;
+}
+}
+.img{
+    justify-content: center;
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    border-color: 5px greenyellow;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+div{
+    color: green;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 16px;
+    height:16px;
+    width:16px;
