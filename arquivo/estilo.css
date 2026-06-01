@@ -1,0 +1,26 @@
+.card {
+ /* Add shadows to create the "card" effect */
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: white;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+body {
+    background-color:gray; 
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap; /* Quebra linha em telas menores */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+}
